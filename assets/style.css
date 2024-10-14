@@ -1,38 +1,43 @@
-
 #webstorage {
     padding: 10px 0;
     background-color: rgb(206, 212, 248);
 }
+
 #webstorage .card {
     width: 100%;
     border-radius: 30px;
     background-color: rgb(249, 240, 228);
 }
+
 #webstorage .webstorage-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 #webstorage .card .card-image img {
     width: 100%;
     height: auto;
 }
+
 #webstorage .card .card-actions {
     text-align: center;
     padding: 10px;
     line-height: 20px;
 }
 
-#webstorage .card .card-actions button{
+#webstorage .card .card-actions button {
     padding: 5px 20px;
     background-color: black;
     color: white;
     border-radius: 30px;
 }
+
 .card-icon {
     position: relative;
     font-size: 30px;
 }
+
 .card-icon .badge {
     position: absolute;
     bottom: -10px;
@@ -43,27 +48,30 @@
     padding: 5px 10px;
     font-size: 12px;
 }
+
 /* basket window */
 .card-popup {
-  overflow-y: auto; 
     position: fixed;
     top: 0;
     right: 0;
-    width: 320px;
+    width: 330px;
     height: 100%;
     background-color: #333;
     color: white;
     padding: 20px;
 }
+
 .card-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .card-footer {
     display: flex;
     justify-content: space-between;
 }
+
 .card-item {
     display: flex;
     justify-content: space-between;
@@ -78,20 +86,29 @@
     object-fit: cover;
     margin-right: 10px;
 }
+
 .card-item-info {
     display: flex;
     align-items: center;
 }
+
 .card-item p {
     margin: 0;
     font-size: 15px;
 }
+
 .btn-clear,
 .btn-checkout {
     background-color: rgb(255, 153, 0);
-    color: #ffffff;
     padding: 10px;
     border: none;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 15px;
+}
+
+.close-btn {
+    padding: 5px 10px;
+    border: none;
+    font-size: 20px;
+    background-color: rgb(255, 153, 0);
 }

@@ -19,7 +19,7 @@
         <div class="container">
             <div class="webstorage-header">
                 <h1>Product List</h1>
-                <div class="card-icon" id="card-icon" onclick="toggleCart()">
+                <div class="card-icon" id="card-icon" onclick="showPopup()">
                     <i class="bi bi-cart"></i>
                     <span class="badge" id="card-count">0</span>
                 </div>
@@ -28,105 +28,104 @@
                 <div class="col-3 pad">
                     <div class="card">
                         <div class="card-image">
-                            <img src="./assets/image/photo1.png"
-                                alt="">
+                            <img src="./assets/image/photo1.png">
                         </div>
                         <div class="card-actions">
                             <h5>Ldo1 Lounge Chair</h5>
                             <p>$200</p>
-                            <button onclick="addToCart('Ldo1 Lounge Chair', 200)">Add to Cart</button>
+                            <button onclick="addToCart('Ldo1 Lounge Chair', 200, './assets/image/photo1.png')">Add to
+                                Cart</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-3 pad">
                     <div class="card">
                         <div class="card-image">
-                            <img src="./assets/image/photo2.png"
-                                alt="">
+                            <img src="./assets/image/photo2.png">
                         </div>
                         <div class="card-actions">
                             <h5>Ldo2 Lounge Chair</h5>
                             <p>$250</p>
-                            <button onclick="addToCart('Ldo2 Lounge Chair', 200)">Add to Cart</button>
+                            <button onclick="addToCart('Ldo2 Lounge Chair', 250, './assets/image/photo2.png')">Add to
+                                Cart</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-3 pad">
                     <div class="card">
                         <div class="card-image">
-                            <img src="./assets/image/photo3.png"
-                                alt="">
+                            <img src="./assets/image/photo3.png">
                         </div>
                         <div class="card-actions">
                             <h5>Ldo3 Lounge Chair</h5>
                             <p>$790</p>
-                            <button onclick="addToCart('Ldo3 Lounge Chair', 200)">Add to Cart</button>
+                            <button onclick="addToCart('Ldo3 Lounge Chair', 790, './assets/image/photo3.png')">Add to
+                                Cart</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-3 pad">
                     <div class="card">
                         <div class="card-image">
-                            <img src="./assets/image/photo4.png"
-                                alt="">
+                            <img src="./assets/image/photo4.png">
                         </div>
                         <div class="card-actions">
                             <h5>Ldo4 Lounge Chair</h5>
                             <p>$400</p>
-                            <button onclick="addToCart('Ldo4 Lounge Chair', 200)">Add to Cart</button>
+                            <button onclick="addToCart('Ldo4 Lounge Chair', 400, './assets/image/photo4.png')">Add to
+                                Cart</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-3 pad">
                     <div class="card">
                         <div class="card-image">
-                            <img src="./assets/image/photo5.png"
-                                alt="">
+                            <img src="./assets/image/photo5.png">
                         </div>
                         <div class="card-actions">
                             <h5>Ldo5 Lounge Chair</h5>
                             <p>$350</p>
-                            <button onclick="addToCart('Ldo5 Lounge Chair', 200)">Add to Cart</button>
+                            <button onclick="addToCart('Ldo5 Lounge Chair', 350, './assets/image/photo5.png')">Add to
+                                Cart</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-3 pad">
                     <div class="card">
                         <div class="card-image">
-                            <img src="./assets/image/photo6.png"
-                                alt="">
+                            <img src="./assets/image/photo6.png">
                         </div>
                         <div class="card-actions">
                             <h5>Ldo6 Lounge Chair</h5>
                             <p>$200</p>
-                            <button onclick="addToCart('Ldo6 Lounge Chair', 200)">Add to Cart</button>
+                            <button onclick="addToCart('Ldo6 Lounge Chair', 200, './assets/image/photo6.png')">Add to
+                                Cart</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-3 pad">
                     <div class="card">
                         <div class="card-image">
-                            <img src="./assets/image/photo7.png"
-                                alt="">
+                            <img src="./assets/image/photo7.png">
                         </div>
                         <div class="card-actions">
                             <h5>Ldo7 Lounge Chair</h5>
                             <p>$200</p>
-                            <button onclick="addToCart('Ldo7 Lounge Chair', 200)">Add to Cart</button>
+                            <button onclick="addToCart('Ldo7 Lounge Chair', 200, './assets/image/photo7.png')">Add to
+                                Cart</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-3 pad">
                     <div class="card">
                         <div class="card-image">
-                            <img src="./assets/image/photo8.png"
-                                alt="">
+                            <img src="./assets/image/photo8.png">
                         </div>
                         <div class="card-actions">
                             <h5>Ldo8 Lounge Chair</h5>
                             <p>$250</p>
-                            <button onclick="addToCart('Ldo8 Lounge Chair', 200)">Add to Cart</button>
-
+                            <button onclick="addToCart('Ldo8 Lounge Chair', 250, './assets/image/photo8.png')">Add to
+                                Cart</button>
                         </div>
                     </div>
                 </div>
@@ -134,7 +133,7 @@
             <div id="card-popup" class="card-popup" style="display: none;">
                 <div class="card-header">
                     <h2>Shopping Cart</h2>
-                    <button class="close-btn" onclick="toggleCart()">X</button>
+                    <button class="close-btn" onclick="hidePopup()">x</button>
                 </div>
                 <div id="card-items" class="card-items"></div>
                 <div class="card-footer">
